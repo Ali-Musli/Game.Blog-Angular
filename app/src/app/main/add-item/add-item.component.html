@@ -1,0 +1,45 @@
+<div class="main">
+    <h1>Add New Item</h1>
+    <form #form="ngForm" (ngSubmit)="addNewItem(form)">
+        <div class="input">
+            <label for="imageUrl">IMG</label>
+            <input type="text" id="imageUrl" name="imageUrl" ngModel #imageUrl="ngModel" required minlength="5">
+            <ng-container *ngIf="imageUrl.touched">
+                <p class="error" *ngIf="imageUrl.errors?.['required']">Img input is required</p>
+                <p class="error" *ngIf="imageUrl.errors?.['minlength']">Img input must be at least 5 char!</p>
+            </ng-container>
+        </div>
+        <div class="input">
+            <label for="title">Titile</label>
+            <input type="text" id="title" name="title" ngModel #title="ngModel" required minlength="5">
+            <ng-container *ngIf="title.touched">
+                <p class="error" *ngIf="title.errors?.['required']">Img input is required</p>
+                <p class="error" *ngIf="title.errors?.['minlength']">Img input must be at least 5 char!</p>
+            </ng-container>
+        </div>
+        <div class="input">
+            <label for="category">Category</label>
+            <input type="text" id="category" name="category" ngModel #category="ngModel" required minlength="5">
+            <ng-container *ngIf="category.touched">
+                <p class="error" *ngIf="category.errors?.['required']">Img input is required</p>
+                <p class="error" *ngIf="category.errors?.['minlength']">Img input must be at least 5 char!</p>
+            </ng-container>
+        </div>
+        <div class="input">
+            <label for="maxLevel">maxLevel</label>
+            <input type="number" id="maxLevel" name="maxLevel" ngModel #maxLevel="ngModel" required>
+            <ng-container *ngIf="maxLevel.touched">
+                <p class="error" *ngIf="maxLevel.errors?.['required']">Img input is required</p>
+            </ng-container>
+        </div>
+        <div class="input">
+            <label for="description">Description</label>
+            <textarea type="text" id="summary" name="summary" ngModel #summary="ngModel" required minlength="20"></textarea>
+            <ng-container *ngIf="summary.touched">
+                <p class="error" *ngIf="summary.errors?.['required']">Img input is required</p>
+                <p class="error" *ngIf="summary.errors?.['minlength']">Img input must be at least 20 char!</p>
+            </ng-container>
+        </div>
+        <button [disabled]="form.invalid">Submit</button>
+    </form>
+</div>

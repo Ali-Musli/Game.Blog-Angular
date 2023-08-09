@@ -1,0 +1,32 @@
+<div class="main">
+    <div class="content">
+        <img [src]="curentPost?.imageUrl" />
+        <div class="text">
+            <p>Title: {{ curentPost?.title }}</p>
+            <p>Category: {{ curentPost?.category }}</p>
+            <p>maxLevel: {{ curentPost?.maxLevel }}</p>
+            <div class="description">{{ curentPost?.summary }}</div>
+        </div>
+        <div *ngIf="user" class="btns">
+            <button [id]="curentPost._id" [routerLink]="['/edit', curentPost._id]" *ngIf="isOwner">Edit</button>
+            <button [id]="curentPost._id" class="dellBtn" (click)="delete($event)" *ngIf="isOwner">Delete</button>
+        </div>
+        <div *ngIf=" user && curentPost?._ownerId !== user?._id" class="comment">
+            <form #form="ngForm" (ngSubmit)="addNewComment(form)">
+                <label for="comment">Comment</label>
+                <textarea type="text" id="comment" ngModel name="comment"></textarea>
+                <button>Add</button>
+            </form>
+        </div>
+
+        <div class="listComments">
+            <div class="delBtn" *ngFor="let comment of curentComments">
+                <p>{{comment.userEmail}}: {{comment.comment}}</p>
+                <button [id]="comment._id" (click)="deleteComment($event)" class="dellBtn" *ngIf="comment?._ownerId === user?._id">Delete</button>
+            </div>
+            <div class="noComments" *ngIf="curentComments.length===0 && !isOwner">
+                <p>There are no comments yet, you can add the first one</p>
+            </div>
+        </div>
+    </div>
+</div>

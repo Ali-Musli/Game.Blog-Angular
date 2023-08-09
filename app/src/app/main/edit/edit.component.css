@@ -1,0 +1,42 @@
+.main{
+    width: 450px;
+    height: 650px;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    background-color: rgba(150, 136, 136, 0.472);
+}
+
+.input{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:20px
+}
+
+button{
+    margin-top: 20px;
+    float: right;
+}
+
+label{
+    font-size: 20px;
+}
+
+input{
+    width: 220px;
+}
+
+textarea{
+    width: 220px;
+    height: 100px;
+}
+
+.error{
+    color: red;
+}
