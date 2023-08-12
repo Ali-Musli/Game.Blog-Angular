@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main{
+    background-image: url('https://img.freepik.com/free-vector/404-error-abstract-concept-illustration_335657-2243.jpg?w=1380&t=st=1691612828~exp=1691613428~hmac=c70d8360590be6f6d99f90c1c3be3f16e1e680b2aeeb5f0a878cce00717dd5cd');
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position:bottom center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+button{
+    position: absolute;
+    left: 690px;
+    top: 490px;
+    width: 110px;
+    height: 35px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FE7062;
+    color: #0E076D;
+}

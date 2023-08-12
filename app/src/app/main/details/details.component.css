@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main{
+    background-image: url('https://img.freepik.com/free-vector/graphic-design-video-tutorial-traditional-art-internet-course-painter-online-masterclass-web-designer-distance-class-painting-e-learning-education-concept-illustration_335657-1769.jpg?w=1380&t=st=1691442075~exp=1691442675~hmac=d435a4ddcd2910457afb723aad04add54c8cd148e61be3031d80ff5134fe118e');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position:left center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 700px;
+    height: auto;
+    margin: 15px 0 60px 0;
+    padding: 10px;
+    background-color: #b46db3bb;
+    margin-left: 690px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.description{
+    height: 120px;
+    overflow: scroll;
+    color: rgb(100, 99, 99);
+    line-height: 1.3em;
+    text-align: center;
+    font-size: 18px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: bold;
+}
+
+.text p{
+    text-align: center;
+    color: white;
+    font-size: 19px;
+    margin-bottom: 15px;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+.title{
+    color: black;
+    font-weight: bold;
+}
+
+.content img{
+    width: 500px;
+    height: 350px;
+    border-radius: 50px;
+}
+
+.btns button{
+    width: 100px;
+    height: 34px;
+    border-radius: 7px;
+    border-style: none;
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+.dellBtn{
+    color: red;
+}
+
+.comment{
+    margin-top: 15px;
+    width: 500px;
+    background-color: rgba(128, 128, 128, 0.222);
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.comment label{
+    text-align: center;
+}
+
+.comment textarea{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.comment button{
+    margin-top: 7px;
+    width: 70px;
+    align-self: center;
+}
+
+.listComments{
+    margin-top: 20px;
+    width: 500px;
+    height: 90px;
+    overflow: scroll;
+}
+
+.delBtn{
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+.delBtn button{
+    height: 20px;
+    border-radius: 7px;
+    border-style: none;
+}
+
+.noComments p{
+    text-align: center;
+}

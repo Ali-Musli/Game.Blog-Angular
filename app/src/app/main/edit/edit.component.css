@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main{
+    background-image: url('https://img.freepik.com/free-vector/technical-support-programming-coding_335657-2470.jpg?w=2000&t=st=1691610493~exp=1691611093~hmac=e52f6ae7b5a9db6bbae776883ddd2ae3c1b7c8f3c1eb4813b63c503b985950d9');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position:right center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    width: 550px;
+    height: 670px;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin: 20px 780px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    background-color: #fe6f62e2;
+
+}
+.input{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:20px
+}
+
+button{
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    float: right;
+    border-style: none;
+    border-radius: 10px;
+    color: green;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: green;
+    color: white;
+}
+
+label{
+    font-size: 20px;
+    align-self: center;
+}
+
+input{
+    width: 300px;
+    height: 30px;
+}
+
+textarea{
+    width: 320px;
+    height: 100px;
+}
+
+.error{
+    color: red;
+    font-weight: bold;
+}

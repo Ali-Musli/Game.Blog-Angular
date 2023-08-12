@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/computer-gaming-industry-cybersport-training-esports-coaching-lessons-with-pro-gamers-esports-coaching-platform-play-like-pro-concept-pinkish-coral-bluevector-isolated-illustration_335657-1256.jpg?w=2000&t=st=1691324040~exp=1691324640~hmac=cfb44c2b01e8a2745616a2be1080f70dd0052fc471fe0248b9eed258f2cb07e3');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: 8em;
+}
+.welcome{
+    background-color: #91B3FA;
+    height: 330px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 612px;
+    margin: 0 auto;
+}
+
+.welcome:hover{
+    background-color: rgba(128, 128, 128, 0.029);
+}
+
+.welcome h1{
+    color: white;
+    font-size: 30px;
+}
+
+.welcome button{
+    margin-top: 40px;
+    width: 100px;
+    height: 39px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #FE7062;
+    color: white;
+    font-size: 15px;
+}
+
+.welcome button:hover{
+    cursor: pointer;
+}
