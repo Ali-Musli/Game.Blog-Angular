@@ -18,7 +18,7 @@ The Register page contains a form for new user registration. By providing an ema
 
 Upon success, the REST service will return the newly created object with an automatically generated _id and a property accessToken, which contains the session token for the user. The information will be store in localStorage, in order to be able to perform authenticated requests.
 
-If the register is successful, the user will be redirect to the Home page. 
+If the register is successful, the user will be redirect to the Catalog page. 
 
 ### Logout
 The logout action is available to logged-in users. 
