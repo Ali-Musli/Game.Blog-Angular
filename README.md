@@ -28,7 +28,7 @@ Upon success, the REST service will return an empty response and the session inf
 If the logout was successful, the user will be redirect to the Home page. 
 
 ### All Posts Page
-This page displays a list of all posts in the system, with their title and location. Clicking on any of the cards leads to the details page for the selected post.
+This page displays a list of all posts in the system, with their title, category, maxLevel and description. Clicking on any of the cards leads to the details page for the selected post.
 
 If there are no post (unauthenticated visitors), the button for "Login" will be available. If there are no post (authenticated visitors), the button for "Create" will be available. 
 
@@ -62,10 +62,10 @@ Upon success, the REST service will return an object, containing the deletion ti
 Upon success, the user will be redirected to the All Posts Page.
 
 ### Comments
-Every logged-in user will be able to comments other posts, but not his own. Guest will not be able to see the section Add new comment, but will be able to see the section Comments.
+Every logged-in user will be able to comments other posts, but not his own. If the current user is the owner of the comment, they will have the option to delete it. Guest will not be able to see the section Add new comment, but will be able to see the section Comments.
 
 ### My Posts Page
-This page displays a list of all posts in the system for the current user, with their title and location. Clicking on any of the cards takes you to the details page for the selected publication.
+This page displays a list of all posts in the system for the current user, with their title. category, maxLevel and description. Clicking on any of the cards takes you to the details page for the selected publication.
 
 If there are no post, the button for "Create" will be available. 
 
