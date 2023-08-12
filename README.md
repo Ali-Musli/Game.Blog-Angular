@@ -11,7 +11,7 @@ The Login page contains a form for existing user authentication. By providing an
 
 Upon success, the REST service will return information about the existing user along with a property accessToken, which contains the session token for the user. The information will be store in localStorage, in order to be able to perform authenticated requests. 
 
-If the login is successful, the user will be redirect to the Home page. 
+If the login is successful, the user will be redirect to the Catalog page. 
 
 ### Register Page
 The Register page contains a form for new user registration. By providing an email, password and confirm password the app should register a new user in the system if there are no empty fields. 
